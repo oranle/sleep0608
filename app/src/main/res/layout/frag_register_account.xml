@@ -1,0 +1,167 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include_top_view"
+            layout="@layout/login_top_view" />
+
+        <LinearLayout
+            android:id="@+id/register_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="34dp"
+                android:background="@drawable/shape_input_normal_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="18dp"
+                android:paddingTop="11dp"
+                android:paddingEnd="18dp"
+                android:paddingBottom="11dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_phone_num" />
+
+                <EditText
+                    android:id="@+id/input_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:background="@null"
+                    android:hint="请输入手机号码"
+                    android:textColorHint="#B9B9B9"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="34dp"
+                android:background="@drawable/shape_input_normal_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="18dp"
+                android:paddingTop="11dp"
+                android:paddingEnd="18dp"
+                android:paddingBottom="11dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_psw_lock" />
+
+                <EditText
+                    android:id="@+id/psw_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:background="@null"
+                    android:hint="设置6~12位登录密码"
+                    android:inputType="textPassword"
+                    android:textColorHint="#B9B9B9"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_login_btn"
+                android:gravity="center"
+                android:paddingStart="64dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="64dp"
+                android:paddingBottom="10dp"
+                android:text="提交"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/register_result_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="账号创建成功"
+                android:textColor="#202020"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="账号创建成功，可正常浏览"
+                android:textColor="#2D2D2D"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/complete_info"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:background="@drawable/shape_login_btn"
+                android:gravity="center"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:text="立即完善信息"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/avoid_and_login"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shape_border_btn"
+                android:gravity="center"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:text="跳过并登录"
+                android:textColor="#2D2D2D"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="备注：完善信息后方可在LIVE内参与互动"
+                android:textColor="#2D2D2D"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

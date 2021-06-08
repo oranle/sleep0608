@@ -1,0 +1,51 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:id="@+id/top_bg"
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_login_top_bg" />
+
+        <FrameLayout
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/close_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="27dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_close_login" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:paddingStart="27dp"
+                android:paddingTop="24dp"
+                android:paddingEnd="27dp"
+                android:paddingBottom="24dp"
+                android:text="用户登录"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:src="@mipmap/ic_login_header" />
+    </FrameLayout>
+
+</layout>
